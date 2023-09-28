@@ -1,13 +1,16 @@
 import React from "react";
-import { Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 import "./reset.css"
 
 function App() {
   return (
-    <h1>
-      aaaa
-    </h1>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </Router>
   )
 }
 

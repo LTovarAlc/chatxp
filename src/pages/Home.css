@@ -1,0 +1,50 @@
+Body{
+    background: linear-gradient(180deg, #000356 5.84%, #AC84DF 47.55%, #9224D4 82.84%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Ropa Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    border-radius: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+.title{
+    font-size: 34px;
+    font-family: 'Ropa sans', sans-serif;
+    font-weight: bolder;
+    padding: 22px 0px 0px 0px;
+}
+
+.IGAC{
+    font-size: 16px;
+    font-family: 'Ropa sans', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.IGAC:hover{
+    color: #9224D4;
+}
+
+.CXP{
+    font-size: 38px;
+    font-family: 'Ropa sans', sans-serif;
+    margin-bottom: 24px;
+}
