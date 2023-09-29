@@ -1,11 +1,39 @@
 {
   "users": [
     {
-      "id": "f74c7570-a5f4-462e-891c-c3213310c6b2",
-      "tag": "#8594",
-      "username": "pepeelmaton",
-      "email": "pepe@email.com",
-      "password": "@enero13"
+      "id": "7cba78c5-11c6-45fd-af08-c6bfb0565a54",
+      "tag": "#0043",
+      "username": "luis_tvr",
+      "email": "luis@email.com",
+      "password": "@Enero13"
+    },
+    {
+      "id": "7fce72b8-f300-4832-8617-eb7e14b41f13",
+      "tag": "#3451",
+      "username": "LT_Dev",
+      "email": "ltdev@gmail.com",
+      "password": "@enero1314"
+    },
+    {
+      "id": "51e6a74d-30ad-4cac-ac1c-71f50d35ea72",
+      "tag": "#9659",
+      "username": "marissio",
+      "email": "marissio@gmail.com",
+      "password": "@enero5"
+    },
+    {
+      "id": "3fb1ca81-b202-4ee5-be4d-18b02207d117",
+      "tag": "#5791",
+      "username": "pepe",
+      "email": "ranapepe@gmail.com",
+      "password": "ramenaoar2@"
+    },
+    {
+      "id": "1d2aff84-fe2e-433d-a665-8b21f6c4ed3a",
+      "tag": "#2661",
+      "username": "BadBunny",
+      "email": "badbunny@gmail.com",
+      "password": "@badbunny"
     }
   ]
 }

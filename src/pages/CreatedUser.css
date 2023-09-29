@@ -1,0 +1,37 @@
+.container__welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.welcome{
+    height: 200px;
+    width: 100%;
+}
+
+.welcome__text{
+    font-family: 'Ropa sans', sans-serif;
+    font-size: 44px;
+    margin-bottom: 24px;
+}
+
+.btn__welcome{
+    margin: 12px 0px;
+    background: linear-gradient(180deg, #000356 5.84%, #9224D4 82.84%);
+    color: #fff;
+    height: 60px;
+    width: 140px;
+    font-size: 24px;
+    font-family: 'Ropa sans', sans-serif;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.btn__welcome:hover{
+    background: linear-gradient(180deg, #9224D4 5.84%, #000356 82.84%);
+}

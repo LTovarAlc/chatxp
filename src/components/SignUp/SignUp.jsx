@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import "./SignUp.css";
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
+
+import "./SignUp.css";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
@@ -9,6 +11,7 @@ const SignUp = () => {
   const [usernameError, setUsernameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const navigate = useNavigate();
 
   //tag generator
   const generateRandomTag = () => {
@@ -80,7 +83,6 @@ const SignUp = () => {
         });
 
         if (response.ok) {
-          console.log("Usuario agregado:", newUser);
 
           setUsername("");
           setEmail("");
@@ -88,6 +90,8 @@ const SignUp = () => {
           setUsernameError("");
           setEmailError("");
           setPasswordError("");
+
+          navigate("/welcome")
         } else {
           console.error("Error al agregar el usuario.");
         }
@@ -98,6 +102,7 @@ const SignUp = () => {
   };
 
   return (
+    <>
     <form action="" className="Signup" onSubmit={handleSubmit}>
       <div className="input__container">
         <input
@@ -145,6 +150,7 @@ const SignUp = () => {
         Sign Up
       </button>
     </form>
+    </>
   );
 };
 
