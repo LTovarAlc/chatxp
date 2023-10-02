@@ -10,7 +10,8 @@ const Dashboard = () => {
         <section className="section">
             <RecentChat/>
             <div className="chat">
-                <h1 className="title__dashboard">user/grupo</h1>
+                <h1 className="title__dashboard">Chat</h1>
+                
             </div>
             <div className="settings">
                 <h1 className="title__dashboard">Settings</h1>
