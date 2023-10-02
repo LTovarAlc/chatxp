@@ -1,7 +1,9 @@
 import React from "react";
 import RecentChat from "../components/RecentChats/RecentChats";
+import ChatBox from "../components/chatBox/ChatBox";
 
 import "./Dashboard.css"
+
 
 
 const Dashboard = () => {
@@ -9,10 +11,7 @@ const Dashboard = () => {
     <>
         <section className="section">
             <RecentChat/>
-            <div className="chat">
-                <h1 className="title__dashboard">Chat</h1>
-                
-            </div>
+            <ChatBox/>
             <div className="settings">
                 <h1 className="title__dashboard">Settings</h1>
             </div>
