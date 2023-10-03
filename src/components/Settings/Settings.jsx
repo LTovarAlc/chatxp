@@ -3,6 +3,7 @@ import React from "react";
 import "./Settings.css";
 import Modal from "../Modal/Modal";
 import GeneralSettings from "./General/GeneralSettings";
+import BackgroundSettings from "./Background/BackgroundSettings";
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,7 +42,7 @@ const Settings = () => {
             <span>General</span>
             <img src="./img/settings.png" alt="" className="settings__icon" />
           </div>
-          <div className="settings__card" onClick={() => openModal("Edit background", "Background")}>
+          <div className="settings__card" onClick={() => openModal("Edit background", <BackgroundSettings/>)}>
             <span>Edit background</span>
             <img src="./img/background.png" alt="" className="settings__icon" />
           </div>
