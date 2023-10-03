@@ -5,6 +5,8 @@ import Modal from "../Modal/Modal";
 import GeneralSettings from "./General/GeneralSettings";
 import BackgroundSettings from "./Background/BackgroundSettings";
 import ProfileSettings from "./Profile/ProfileSettings";
+import TMSettings from "./T&M/T&M";
+import SecuritySettings from "./SecuritySettings/Security";
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,11 +53,11 @@ const Settings = () => {
             <span>Edit profile</span>
             <img src="./img/userSettings.png" className="settings__icon"/>
           </div>
-          <div className="settings__card" onClick={() => openModal("Terms & Conditions", "Terms & Conditions")}>
+          <div className="settings__card" onClick={() => openModal("Terms & Conditions", <TMSettings/>)}>
             <span>Terms & Conditions</span>
             <img src="./img/T&C.png" alt="" className="settings__icon" />
           </div>
-          <div className="settings__card" onClick={() => openModal("Security", "Security")}>
+          <div className="settings__card" onClick={() => openModal("Security", <SecuritySettings/>)}>
             <span>Security</span> 
             <img src="./img/security.png" alt="" className="settings__icon" />
           </div>

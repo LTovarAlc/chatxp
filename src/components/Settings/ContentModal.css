@@ -37,3 +37,10 @@
 .settings__card-modal:hover{
     box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.7);
 }
+
+.container__tm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
