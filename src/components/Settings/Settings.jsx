@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import "./Settings.css";
 import Modal from "../Modal/Modal";
+import GeneralSettings from "./General/GeneralSettings";
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,7 +37,7 @@ const Settings = () => {
           </button>
         </div>
         <div className="settings__container">
-          <div className="settings__card" onClick={() => openModal("General", "General settings")}>
+          <div className="settings__card" onClick={() => openModal("General", <GeneralSettings/>)}>
             <span>General</span>
             <img src="./img/settings.png" alt="" className="settings__icon" />
           </div>
