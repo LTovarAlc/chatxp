@@ -34,3 +34,48 @@
 .settings__icon{
     height: 30px;
 }
+
+.profile__container{
+    background-color: #e0dfdf;
+    margin-top: 22px;
+    width: 80%;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__data{
+    display: flex;
+    align-items: center;
+}
+
+.profile__name{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.user{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.options{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0dfdf;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.options__img{
+    height: 20px;
+    border-radius: 10px;
+}
+
+.options:hover{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}
