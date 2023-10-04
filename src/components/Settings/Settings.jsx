@@ -7,6 +7,7 @@ import BackgroundSettings from "./Background/BackgroundSettings";
 import ProfileSettings from "./Profile/ProfileSettings";
 import TMSettings from "./T&M/T&M";
 import SecuritySettings from "./SecuritySettings/Security";
+import LogOut from "./LogOut/LogOut";
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,7 +33,7 @@ const Settings = () => {
             <img src="./img/user.png" className="user" alt="User" />
             <span className="profile__name">User</span>
           </div>
-          <button className="options" title="Log Out" onClick={() => openModal("Log Out", "Log Out")}>
+          <button className="options" title="Log Out" onClick={() => openModal("Log Out", <LogOut/>)}>
             <img
               src="./img/logout.png"
               alt="Options"
