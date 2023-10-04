@@ -32,7 +32,7 @@ const Settings = () => {
             <img src="./img/user.png" className="user" alt="User" />
             <span className="profile__name">User</span>
           </div>
-          <button className="options" title="Log Out">
+          <button className="options" title="Log Out" onClick={() => openModal("Log Out", "Log Out")}>
             <img
               src="./img/logout.png"
               alt="Options"
