@@ -17,7 +17,7 @@ const AddFriend = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3001/users");
+      const response = await fetch("https://fake-apicxpusers.vercel.app/");
       const users = await response.json();
 
       const userExists = users.some((u) => u.username === user);

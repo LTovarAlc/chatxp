@@ -22,7 +22,7 @@ const LogIn = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3001/users?email=${email}&password=${password}`
+        `https://fake-apicxpusers.vercel.app/?email=${email}&password=${password}`
       );
       const data = await response.json();
 
