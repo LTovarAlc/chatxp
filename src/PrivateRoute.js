@@ -1,14 +1,15 @@
-// PrivateRoute.js
 import React from 'react';
-import { useAuth } from './AuthContext';
 import { Navigate, Route } from 'react-router-dom';
+import { useAuth } from './AuthContext'; // Asegúrate de importar tu contexto de autenticación
 
-export const PrivateRoute = ({ ...props }) => {
-  const { isAuthenticated } = useAuth();
+const PrivateRoute = ({ element, ...props }) => {
+  const { isAuthenticated } = useAuth(); // Aquí obtienes el estado de autenticación
 
   if (isAuthenticated) {
-    return <Route {...props} />;
+    return <Route {...props} element={element} />;
   } else {
-    return <Navigate to="/" state={{ from: props.path }} />;
+    return <Navigate to="/" replace />;
   }
 };
+
+export default PrivateRoute;

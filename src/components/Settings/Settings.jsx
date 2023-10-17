@@ -8,10 +8,12 @@ import ProfileSettings from "./Profile/ProfileSettings";
 import TMSettings from "./T&M/T&M";
 import SecuritySettings from "./SecuritySettings/Security";
 import LogOut from "./LogOut/LogOut";
+import { useUser } from "../../AuthContext";
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalInfo, setModalInfo] = useState({ title: "", content: "" });
+  const {username} = useUser();
 
   // open Modal
   const openModal = (title, content) => {
@@ -31,7 +33,7 @@ const Settings = () => {
         <div className="profile__container">
           <div className="profile__data">
             <img src="./img/user.png" className="user" alt="User" />
-            <span className="profile__name">User</span>
+            <span className="profile__name">{username || "Guest"}</span>
           </div>
           <button className="options" title="Log Out" onClick={() => openModal("Log Out", <LogOut/>)}>
             <img

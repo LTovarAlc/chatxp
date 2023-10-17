@@ -3,22 +3,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CreatedUser from "./pages/CreatedUser";
-import { AuthProvider } from "./AuthContext";
-import { PrivateRoute } from "./PrivateRoute";
+import { UserProvider } from "./AuthContext"; // Cambiado a UserProvider
 
 import "./reset.css";
 
 function App() {
   return (
-    <AuthProvider>
+    <UserProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/welcome" element={<CreatedUser />} />
         </Routes>
       </Router>
-    </AuthProvider>
+    </UserProvider>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate} from "react-router-dom"
+import { useUser } from "../../AuthContext";
 
 import "./LogIn.css";
 
@@ -9,6 +10,7 @@ const LogIn = () => {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
+  const { setUser } = useUser();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,11 +24,13 @@ const LogIn = () => {
 
     try {
       const response = await fetch(
-        `https://fake-apicxpusers.vercel.app/?email=${email}&password=${password}`
+        `https://fake-apicxpusers.vercel.app/users?email=${email}&password=${password}`
       );
       const data = await response.json();
 
       if (response.ok && data.length > 0) {
+        const loggedInUser = data[0]
+        setUser(loggedInUser.username) // remplaza username por el nombre del usuario logeado
         navigate("/dashboard")
       } else {
         setEmailError("Invalid email or password.");
