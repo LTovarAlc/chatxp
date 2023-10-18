@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import CreatedUser from "./pages/CreatedUser";
-import { UserProvider } from "./AuthContext"; // Cambiado a UserProvider
+import { UserProvider } from "./AuthContext"; 
 
 import "./reset.css";
 
 function App() {
+
   return (
     <UserProvider>
       <Router>
