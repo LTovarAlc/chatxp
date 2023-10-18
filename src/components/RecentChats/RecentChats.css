@@ -19,6 +19,10 @@
     background-color: #fff;
 }
 
+.input__search:focus{
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
 .search{
     height: 30px;
     cursor: pointer;
@@ -77,11 +81,11 @@
 }
 
 .addFriend{
-    width: 100%;
+    width: 80%;
     margin: 0px 0px 24px 0px;
     border: none;
     border-radius: 12px;
-    height: 30px;
+    height: 40px;
     background-color: #fff;
     font-size: 30px;
     cursor: pointer;
@@ -90,4 +94,26 @@
 
 .addFriend:hover{
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.buttons__chat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bell__btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bell__btn:hover{
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bell{
+    height: 30px;
 }

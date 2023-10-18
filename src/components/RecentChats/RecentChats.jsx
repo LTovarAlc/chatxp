@@ -2,11 +2,10 @@ import React from "react";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 
-import "./RecentChats.css"
+import "./RecentChats.css";
 import AddFriend from "./AddFriend/AddFriend";
 
 const RecentChat = () => {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalInfo, setModalInfo] = useState({ title: "", content: "" });
 
@@ -34,7 +33,18 @@ const RecentChat = () => {
           <img src="./img/search.png" alt="Search" className="search" />
         </div>
         <div className="conversation__container">
-          <button className="addFriend" title="Add Friend/chat" onClick={() => openModal("Add Friend", <AddFriend/>)}>+</button>
+          <div className="buttons__chat">
+            <button
+              className="addFriend"
+              title="Add Friend/chat"
+              onClick={() => openModal("Add Friend", <AddFriend />)}
+            >
+              +
+            </button>
+            <button className="bell__btn">
+              <img src="./img/bell.png" alt="" className="bell" />
+            </button>
+          </div>
           <div className="chat__container">
             <img src="./img/user.png" alt="User" className="user__image" />
             <div className="chat__info">
