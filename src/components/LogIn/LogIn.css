@@ -70,3 +70,13 @@
 .btn__signup:hover{
     background: linear-gradient(180deg, #9224D4 5.84%, #000356 82.84%);
 }
+
+.password-toggle{
+    font-family: 'Ropa sans', sans-serif;
+    font-size: 18px;
+}
+
+.password-toggle:hover{
+    color: #9224D4;
+    cursor: pointer;
+}
