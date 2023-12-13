@@ -74,7 +74,7 @@ const SignUp = () => {
       };
 
       try {
-        const response = await fetch("https://fake-apicxpusers.vercel.app/", {
+        const response = await fetch("https://fake-apicxp.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
